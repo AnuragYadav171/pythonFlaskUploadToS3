@@ -4,9 +4,9 @@ from botocore.client import Config
 
 app = Flask(__name__, template_folder='template')
 
-ACCESS_KEY_ID = 'AKIAJM5DQ3KG74XDASHQ'
-ACCESS_SECRET_KEY = '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'
-BUCKET_NAME = 'anurag1306171a'
+ACCESS_KEY_ID = '*'
+ACCESS_SECRET_KEY = '*'
+BUCKET_NAME = '*'
 
 @app.route('/')
 def index():
