@@ -13,4 +13,4 @@ EXPOSE 5000
 
 # CMD flask run --host localhost
 
-CMD ["flask", "run", "--host", "localhost"]
+CMD ["flask", "run", "--host", "13.234.115.203", "--port", "5000"]
