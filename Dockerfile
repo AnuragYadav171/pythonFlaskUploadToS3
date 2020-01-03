@@ -1,8 +1,8 @@
-FROM abc
+FROM anuragyadav171/flaskapp:flask
 
 WORKDIR /app
 
-ENV FLASK_APP "uploadFileToS3.py"
+ENV FLASK_APP "lambda/uploadFileToS3.py"
 ENV FLASK_DEBUG True
 
 COPY . /app
