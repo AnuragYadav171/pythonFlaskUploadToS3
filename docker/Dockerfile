@@ -2,10 +2,10 @@ FROM abc
 
 WORKDIR /app
 
-ENV FLASK_APP "uploadFileToS3.py"
+ENV FLASK_APP "lambda/uploadFileToS3.py"
 ENV FLASK_DEBUG True
 
-COPY . /app
+COPY ../template /app
 
 EXPOSE 5000
 
