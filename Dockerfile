@@ -11,4 +11,4 @@ EXPOSE 5000
 
 #CMD export FLASK_APP=uploadFileToS3.py && flask run
 
-CMD flask run --host=13.233.35.143
+CMD flask run --host="13.233.35.143"
