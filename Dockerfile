@@ -9,6 +9,6 @@ COPY . /app
 
 EXPOSE 5000
 
-#CMD1 flask run --host=0.0.0.0
+#CMD flask run --host=0.0.0.0
 
 CMD flask run --host `awk 'END{print $1}' /etc/hosts` --port 5000
