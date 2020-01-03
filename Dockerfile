@@ -1,4 +1,4 @@
-FROM tiangolo/uwsgi-nginx-flask
+FROM anuragyadav171/flaskapp:flask
 
 WORKDIR /app
 
