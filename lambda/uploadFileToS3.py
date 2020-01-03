@@ -2,7 +2,7 @@ from flask import Flask, escape, request, render_template
 import boto3
 from botocore.client import Config
 
-app = Flask(__name__, template_folder='template')
+app = Flask(__name__, template_folder='../template')
 
 ACCESS_KEY_ID = '*'
 ACCESS_SECRET_KEY = '*'
@@ -10,7 +10,7 @@ BUCKET_NAME = '*'
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('../index.html')
 
 # a route where we will display a welcome message via an HTML template
 @app.route("/uploader", methods=['GET','POST'])
