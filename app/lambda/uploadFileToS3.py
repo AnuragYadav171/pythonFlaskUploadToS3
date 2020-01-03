@@ -4,9 +4,9 @@ from botocore.client import Config
 
 app = Flask(__name__, template_folder='../template')
 
-ACCESS_KEY_ID = '*'
-ACCESS_SECRET_KEY = '*'
-BUCKET_NAME = '*'
+ACCESS_KEY_ID = 'AKIAJM5DQ3KG74XDASHQ'
+ACCESS_SECRET_KEY = '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'
+BUCKET_NAME = 'anurag1306171a'
 
 @app.route('/')
 def index():
@@ -34,7 +34,7 @@ def upload():
             s3.Bucket(BUCKET_NAME).put_object(Key=FILE_NAME, Body=data, ACL='public-read')
 
             print ("Done")
-            return render_template('index.html', message=FILE_NAME + ' -> Uploaded to S3 *(' + BUCKET_NAME + ')* - AWS !');
+            return render_template('../index.html', message=FILE_NAME + ' -> Uploaded to S3 *(' + BUCKET_NAME + ')* - AWS !');
 
 # run the application
 if __name__ == "__main__":
