@@ -1,4 +1,4 @@
-FROM abc
+FROM tiangolo/uwsgi-nginx-flask
 
 WORKDIR /app
 
