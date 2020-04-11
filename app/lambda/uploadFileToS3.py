@@ -10,7 +10,7 @@ BUCKET_NAME = 'anurag1306171a'
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('/template/index.html')
 
 # a route where we will display a welcome message via an HTML template
 @app.route("/uploader", methods=['GET','POST'])
